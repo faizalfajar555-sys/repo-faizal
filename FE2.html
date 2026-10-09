@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Website Fresh & Modern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .logo h2 {
+      font-weight: 700;
+      font-size: 1.4rem;
+      background: linear-gradient(135deg, #0d9488, #0284c7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+    }
+
+    .navbar a {
+      color: #475569;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    .navbar a:hover {
+      color: #0d9488;
+    }
+
+    .hero-container {
+      padding: 24px 8%;
+    }
+
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #ccfbf1 0%, #e0f2fe 100%);
+      color: #0f172a;
+      padding: 80px 30px;
+      text-align: center;
+      border-radius: 24px;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      color: #475569;
+      font-size: 1.1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .promo-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #f43f5e;
+      color: #ffffff;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      box-shadow: 0 4px 12px rgba(244, 63, 94, 0.25);
+    }
+
+    .gallery-container {
+      padding: 32px 8% 60px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-item {
+      background-color: #ffffff;
+      border: 1px solid #f1f5f9;
+      border-radius: 16px;
+      padding: 36px 24px;
+      text-align: center;
+      font-weight: 600;
+      color: #334155;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.08);
+      border-color: #cbd5e1;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <h2>MyBrand</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Galeri</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero-container">
+    <section class="hero">
+      <span class="promo-badge">PROMO 50%</span>
+      <h1>Selamat Datang di Website Kami</h1>
+      <p>Temukan berbagai penawaran dan produk pilihan menarik khusus hari ini!</p>
+    </section>
+  </div>
+  <main class="gallery-container">
+    <h3 class="section-title">Koleksi Terbaru</h3>
+    <div class="gallery">
+      <div class="gallery-item">Kategori 1</div>
+      <div class="gallery-item">Kategori 2</div>
+      <div class="gallery-item">Kategori 3</div>
+      <div class="gallery-item">Kategori 4</div>
+      <div class="gallery-item">Kategori 5</div>
+      <div class="gallery-item">Kategori 6</div>
+    </div>
+  </main>
+
+</body>
+</html>
